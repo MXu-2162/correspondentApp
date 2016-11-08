@@ -10,8 +10,10 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
     
-    var article: UILabel!
-    var author: UILabel!
+    @IBOutlet weak var Title: UILabel!
+    @IBOutlet weak var article: UILabel!
+    @IBOutlet weak var author: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

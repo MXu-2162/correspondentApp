@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var articles = [1,2]
     override func viewDidLoad() {
@@ -17,6 +18,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self;
         tableView.dataSource = self;
+        if(self.revealViewController() != nil){
+            menuButton.addTarget(self.revealViewController(), action: Selector("revealToggle:"), forControlEvents: UIControlEvents.TouchUpInside)
+            
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

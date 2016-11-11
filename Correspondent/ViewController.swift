@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self;
         if(self.revealViewController() != nil){
             menuButton.addTarget(self.revealViewController(), action: Selector("revealToggle:"), forControlEvents: UIControlEvents.TouchUpInside)
-            
+            self.revealViewController().rearViewRevealWidth = 200
             
         }
     }

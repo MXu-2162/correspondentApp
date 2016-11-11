@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,16 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Corre-logo-wide" translatesAutoresizingMaskIntoConstraints="NO" id="Dry-Mj-TNM">
-                                <rect key="frame" x="-341" y="-54" width="1450" height="1142"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Corre-logo-wide" translatesAutoresizingMaskIntoConstraints="NO" id="UlC-4K-GSm">
+                                <rect key="frame" x="32" y="402" width="716" height="382"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dry-Mj-TNM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-54" id="bwW-6f-fl1"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Dry-Mj-TNM" secondAttribute="bottom" constant="-64" id="eQI-fq-MIL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Dry-Mj-TNM" secondAttribute="trailing" constant="-361" id="gtO-h8-dFC"/>
-                            <constraint firstItem="Dry-Mj-TNM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-361" id="wXg-kA-wJA"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="UlC-4K-GSm" secondAttribute="bottom" constant="150" id="0AH-NA-TlS"/>
+                            <constraint firstItem="UlC-4K-GSm" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="4Oj-3i-dII"/>
+                            <constraint firstItem="UlC-4K-GSm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QAX-HZ-j8w"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>

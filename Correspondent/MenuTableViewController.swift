@@ -10,6 +10,8 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
 
+    let categories = ["News", "Opinions", "Entertainment", "Features", "In Depth", "Sports"]
+    
     @IBOutlet var menuTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +37,14 @@ class MenuTableViewController: UITableViewController {
 */
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return categories.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = menuTableView.dequeueReusableCellWithIdentifier("categoryCell", forIndexPath: indexPath)
 
-        cell.textLabel?.text = "Category"   
+        cell.textLabel?.text = categories[indexPath.row]
 
         return cell
     }
